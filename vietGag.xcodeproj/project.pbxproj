@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DE98F8915EA9962003ECABB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE98F8815EA9962003ECABB /* UIKit.framework */; };
+		3DE98F8B15EA9962003ECABB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE98F8A15EA9962003ECABB /* Foundation.framework */; };
+		3DE98F8D15EA9962003ECABB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE98F8C15EA9962003ECABB /* CoreGraphics.framework */; };
+		3DE98F9315EA9962003ECABB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DE98F9115EA9962003ECABB /* InfoPlist.strings */; };
+		3DE98F9515EA9962003ECABB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE98F9415EA9962003ECABB /* main.m */; };
+		3DE98F9915EA9962003ECABB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE98F9815EA9962003ECABB /* AppDelegate.m */; };
+		3DE98F9C15EA9962003ECABB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE98F9A15EA9962003ECABB /* MainStoryboard.storyboard */; };
+		3DE98F9F15EA9962003ECABB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE98F9E15EA9962003ECABB /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3DE98F8415EA9962003ECABB /* vietGag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vietGag.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DE98F8815EA9962003ECABB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3DE98F8A15EA9962003ECABB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3DE98F8C15EA9962003ECABB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3DE98F9015EA9962003ECABB /* vietGag-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "vietGag-Info.plist"; sourceTree = "<group>"; };
+		3DE98F9215EA9962003ECABB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3DE98F9415EA9962003ECABB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DE98F9615EA9962003ECABB /* vietGag-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "vietGag-Prefix.pch"; sourceTree = "<group>"; };
+		3DE98F9715EA9962003ECABB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3DE98F9815EA9962003ECABB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3DE98F9B15EA9962003ECABB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		3DE98F9D15EA9962003ECABB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3DE98F9E15EA9962003ECABB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DE98F8115EA9962003ECABB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE98F8915EA9962003ECABB /* UIKit.framework in Frameworks */,
+				3DE98F8B15EA9962003ECABB /* Foundation.framework in Frameworks */,
+				3DE98F8D15EA9962003ECABB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DE98F7915EA9962003ECABB = {
+			isa = PBXGroup;
+			children = (
+				3DE98F8E15EA9962003ECABB /* vietGag */,
+				3DE98F8715EA9962003ECABB /* Frameworks */,
+				3DE98F8515EA9962003ECABB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DE98F8515EA9962003ECABB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DE98F8415EA9962003ECABB /* vietGag.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DE98F8715EA9962003ECABB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DE98F8815EA9962003ECABB /* UIKit.framework */,
+				3DE98F8A15EA9962003ECABB /* Foundation.framework */,
+				3DE98F8C15EA9962003ECABB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DE98F8E15EA9962003ECABB /* vietGag */ = {
+			isa = PBXGroup;
+			children = (
+				3DE98F9715EA9962003ECABB /* AppDelegate.h */,
+				3DE98F9815EA9962003ECABB /* AppDelegate.m */,
+				3DE98F9A15EA9962003ECABB /* MainStoryboard.storyboard */,
+				3DE98F9D15EA9962003ECABB /* ViewController.h */,
+				3DE98F9E15EA9962003ECABB /* ViewController.m */,
+				3DE98F8F15EA9962003ECABB /* Supporting Files */,
+			);
+			path = vietGag;
+			sourceTree = "<group>";
+		};
+		3DE98F8F15EA9962003ECABB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DE98F9015EA9962003ECABB /* vietGag-Info.plist */,
+				3DE98F9115EA9962003ECABB /* InfoPlist.strings */,
+				3DE98F9415EA9962003ECABB /* main.m */,
+				3DE98F9615EA9962003ECABB /* vietGag-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DE98F8315EA9962003ECABB /* vietGag */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DE98FA215EA9962003ECABB /* Build configuration list for PBXNativeTarget "vietGag" */;
+			buildPhases = (
+				3DE98F8015EA9962003ECABB /* Sources */,
+				3DE98F8115EA9962003ECABB /* Frameworks */,
+				3DE98F8215EA9962003ECABB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vietGag;
+			productName = vietGag;
+			productReference = 3DE98F8415EA9962003ECABB /* vietGag.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DE98F7B15EA9962003ECABB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = Vinova;
+			};
+			buildConfigurationList = 3DE98F7E15EA9962003ECABB /* Build configuration list for PBXProject "vietGag" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3DE98F7915EA9962003ECABB;
+			productRefGroup = 3DE98F8515EA9962003ECABB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DE98F8315EA9962003ECABB /* vietGag */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DE98F8215EA9962003ECABB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE98F9315EA9962003ECABB /* InfoPlist.strings in Resources */,
+				3DE98F9C15EA9962003ECABB /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DE98F8015EA9962003ECABB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE98F9515EA9962003ECABB /* main.m in Sources */,
+				3DE98F9915EA9962003ECABB /* AppDelegate.m in Sources */,
+				3DE98F9F15EA9962003ECABB /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3DE98F9115EA9962003ECABB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DE98F9215EA9962003ECABB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3DE98F9A15EA9962003ECABB /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DE98F9B15EA9962003ECABB /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DE98FA015EA9962003ECABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3DE98FA115EA9962003ECABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DE98FA315EA9962003ECABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "vietGag/vietGag-Prefix.pch";
+				INFOPLIST_FILE = "vietGag/vietGag-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3DE98FA415EA9962003ECABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "vietGag/vietGag-Prefix.pch";
+				INFOPLIST_FILE = "vietGag/vietGag-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DE98F7E15EA9962003ECABB /* Build configuration list for PBXProject "vietGag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DE98FA015EA9962003ECABB /* Debug */,
+				3DE98FA115EA9962003ECABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DE98FA215EA9962003ECABB /* Build configuration list for PBXNativeTarget "vietGag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DE98FA315EA9962003ECABB /* Debug */,
+				3DE98FA415EA9962003ECABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DE98F7B15EA9962003ECABB /* Project object */;
+}
