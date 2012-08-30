@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "JSONKit.h"
 #import "Gag.h"
+#import "GagScrollView.h"
 
 @interface GagsViewController : UIViewController <UIScrollViewDelegate>
-@property (weak, nonatomic) IBOutlet UIImageView *gagImageView;
-@property (weak, nonatomic) IBOutlet UILabel *gagLabel;
-@property (strong, nonatomic) IBOutlet UIScrollView *gagScrollView;
+
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end

@@ -18,7 +18,7 @@
 		3D0ABA3415EF2222002FB319 /* 7.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3D0ABA2A15EF2222002FB319 /* 7.gif */; };
 		3D0ABA3515EF2222002FB319 /* 8.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3D0ABA2B15EF2222002FB319 /* 8.gif */; };
 		3D0ABA3615EF2222002FB319 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D0ABA2C15EF2222002FB319 /* 9.jpg */; };
-		3D0ABA3E15EF39CD002FB319 /* gagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0ABA3D15EF39CD002FB319 /* gagView.m */; };
+		3D0ABA3E15EF39CD002FB319 /* GagScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0ABA3D15EF39CD002FB319 /* GagScrollView.m */; };
 		3D7887DF15EB6C8C00252FF0 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7887DE15EB6C8C00252FF0 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3D7887E515EB721E00252FF0 /* Gag.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7887E415EB721E00252FF0 /* Gag.m */; };
 		3DE98F8915EA9962003ECABB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE98F8815EA9962003ECABB /* UIKit.framework */; };
@@ -43,8 +43,8 @@
 		3D0ABA2A15EF2222002FB319 /* 7.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 7.gif; sourceTree = "<group>"; };
 		3D0ABA2B15EF2222002FB319 /* 8.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 8.gif; sourceTree = "<group>"; };
 		3D0ABA2C15EF2222002FB319 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
-		3D0ABA3C15EF39CD002FB319 /* gagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gagView.h; sourceTree = "<group>"; };
-		3D0ABA3D15EF39CD002FB319 /* gagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gagView.m; sourceTree = "<group>"; };
+		3D0ABA3C15EF39CD002FB319 /* GagScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GagScrollView.h; sourceTree = "<group>"; };
+		3D0ABA3D15EF39CD002FB319 /* GagScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GagScrollView.m; sourceTree = "<group>"; };
 		3D7887DD15EB6C8C00252FF0 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = lib/JSONKit/JSONKit.h; sourceTree = "<group>"; };
 		3D7887DE15EB6C8C00252FF0 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = lib/JSONKit/JSONKit.m; sourceTree = "<group>"; };
 		3D7887E315EB721E00252FF0 /* Gag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gag.h; sourceTree = "<group>"; };
@@ -157,8 +157,8 @@
 				3DE98F9A15EA9962003ECABB /* MainStoryboard.storyboard */,
 				3D09A05C15EDF20600B521A5 /* GagsViewController.h */,
 				3D09A05D15EDF20600B521A5 /* GagsViewController.m */,
-				3D0ABA3C15EF39CD002FB319 /* gagView.h */,
-				3D0ABA3D15EF39CD002FB319 /* gagView.m */,
+				3D0ABA3C15EF39CD002FB319 /* GagScrollView.h */,
+				3D0ABA3D15EF39CD002FB319 /* GagScrollView.m */,
 				3DE98F8F15EA9962003ECABB /* Supporting Files */,
 			);
 			path = vietGag;
@@ -253,7 +253,7 @@
 				3D7887DF15EB6C8C00252FF0 /* JSONKit.m in Sources */,
 				3D7887E515EB721E00252FF0 /* Gag.m in Sources */,
 				3D09A05E15EDF20600B521A5 /* GagsViewController.m in Sources */,
-				3D0ABA3E15EF39CD002FB319 /* gagView.m in Sources */,
+				3D0ABA3E15EF39CD002FB319 /* GagScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

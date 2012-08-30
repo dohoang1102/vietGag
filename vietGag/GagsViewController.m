@@ -26,9 +26,7 @@
 @end
 
 @implementation GagsViewController
-@synthesize gagImageView;
-@synthesize gagLabel;
-@synthesize gagScrollView;
+@synthesize scrollView;
 @synthesize gagViews;
 @synthesize gags;
 @synthesize gagImages;
@@ -41,43 +39,17 @@
     
     UIView *gagView = [self.gagViews objectAtIndex:page];
     if ((NSNull*)gagView == [NSNull null]) {
-        
-        CGRect frame = self.gagScrollView.bounds;
+        NSLog(@"====Gag: %.d", page);
+        CGRect frame = self.scrollView.bounds;
         frame.origin.x = frame.size.width * page;
         frame.origin.y = 0.0f;
         
-        Gag *currentGag = [gags objectAtIndex:page];
-        NSURL *imageURl = [NSURL URLWithString:currentGag.imageURL];
-        NSData *imageData = [NSData dataWithContentsOfURL:imageURl];
-        UIImage *gagImage = [UIImage imageWithData:imageData];
-//        UIImage *gagImage = [self.gagImages objectAtIndex:page];
+//        Gag *currentGag = [gags objectAtIndex:page];
+//        GagScrollView *newPageView = [[GagScrollView alloc] initWithFrame:frame withGag:currentGag];
+        UIImage *gagImage = [self.gagImages objectAtIndex:page];
+        GagScrollView *newPageView = [[GagScrollView alloc] initWithFrame:frame withGagImage:gagImage];
         
-        
-        UIScrollView *newPageView = [[UIScrollView alloc] initWithFrame:CGRectMake(frame.size.width * page, 0.0f, frame.size.width, frame.size.height)];
-        newPageView.delegate = self;
-                
-        NSLog(@"newPageView 's Frame: %.1f - %.1f", newPageView.frame.size.width, newPageView.frame.size.height);
-    
-        
-        CGFloat scale = gagImage.size.width / newPageView.frame.size.width;
-        
-        CGFloat finalScale = MIN(scale, 1.0f / scale);
-        
-        newPageView.contentSize = CGSizeMake( gagImage.size.width * finalScale, gagImage.size.height * finalScale);
-        
-//        newPageView.contentSize = gagImage.size;
-        
-        NSLog(@"newPageView.contentSize: %.1f %.1f", newPageView.contentSize.width, newPageView.contentSize.height);
-        
-       
-        
-        UIImageView *newImageView = [[UIImageView alloc]initWithImage:gagImage];
-        newImageView.frame = CGRectMake(0.0f, 0.0f, 320, gagImage.size.height * finalScale);
-        
-
-        [newPageView addSubview:newImageView];
-        
-        [gagScrollView addSubview:newPageView];
+        [scrollView addSubview:newPageView];
         [gagViews replaceObjectAtIndex:page withObject:newPageView];
     }
 }
@@ -97,8 +69,8 @@
 
 -(void)loadVisiblePages
 {
-    CGFloat pageWidth = self.gagScrollView.frame.size.width;
-    NSInteger page = (NSInteger)floor((self.gagScrollView.contentOffset.x)* 2.0f + pageWidth) / (pageWidth * 2.0f);
+    CGFloat pageWidth = self.scrollView.frame.size.width;
+    NSInteger page = (NSInteger)floor((self.scrollView.contentOffset.x)* 2.0f + pageWidth) / (pageWidth * 2.0f);
     
     NSInteger firstPage = page -1;
     NSInteger lastPage = page +1;
@@ -120,7 +92,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    gags = [self getGagsForPage:1 perPage:10 forUser:nil withQuery:nil withTag:nil withSource:nil];
+    gags = [self getGagsForPage:2 perPage:10 forUser:nil withQuery:nil withTag:nil withSource:nil];
     gagViews = [[NSMutableArray alloc] init];
     for (NSInteger i = 0; i < 10; ++i) {
         [gagViews addObject:[NSNull null]];
@@ -144,8 +116,8 @@
 {
     [super viewWillAppear:animated];
     
-    CGSize pageScrollViewSize = self.gagScrollView.frame.size;
-    self.gagScrollView.contentSize = CGSizeMake(pageScrollViewSize.width * 10, pageScrollViewSize.height);
+    CGSize pageScrollViewSize = self.scrollView.frame.size;
+    self.scrollView.contentSize = CGSizeMake(pageScrollViewSize.width * 10, pageScrollViewSize.height);
     
     [self loadVisiblePages];
 }
@@ -157,8 +129,6 @@
 
 - (void)viewDidUnload
 {
-    [self setGagImageView:nil];
-    [self setGagLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
