@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D09A05E15EDF20600B521A5 /* GagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D09A05D15EDF20600B521A5 /* GagsViewController.m */; };
+		3D0ABA2D15EF2222002FB319 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D0ABA2315EF2222002FB319 /* 1.jpg */; };
+		3D0ABA2E15EF2222002FB319 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D0ABA2415EF2222002FB319 /* 10.jpg */; };
+		3D0ABA2F15EF2222002FB319 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D0ABA2515EF2222002FB319 /* 2.jpg */; };
+		3D0ABA3015EF2222002FB319 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D0ABA2615EF2222002FB319 /* 3.jpg */; };
+		3D0ABA3115EF2222002FB319 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D0ABA2715EF2222002FB319 /* 4.jpg */; };
+		3D0ABA3215EF2222002FB319 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D0ABA2815EF2222002FB319 /* 5.jpg */; };
+		3D0ABA3315EF2222002FB319 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D0ABA2915EF2222002FB319 /* 6.jpg */; };
+		3D0ABA3415EF2222002FB319 /* 7.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3D0ABA2A15EF2222002FB319 /* 7.gif */; };
+		3D0ABA3515EF2222002FB319 /* 8.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3D0ABA2B15EF2222002FB319 /* 8.gif */; };
+		3D0ABA3615EF2222002FB319 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D0ABA2C15EF2222002FB319 /* 9.jpg */; };
+		3D0ABA3E15EF39CD002FB319 /* gagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0ABA3D15EF39CD002FB319 /* gagView.m */; };
+		3D7887DF15EB6C8C00252FF0 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7887DE15EB6C8C00252FF0 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3D7887E515EB721E00252FF0 /* Gag.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7887E415EB721E00252FF0 /* Gag.m */; };
 		3DE98F8915EA9962003ECABB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE98F8815EA9962003ECABB /* UIKit.framework */; };
 		3DE98F8B15EA9962003ECABB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE98F8A15EA9962003ECABB /* Foundation.framework */; };
 		3DE98F8D15EA9962003ECABB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE98F8C15EA9962003ECABB /* CoreGraphics.framework */; };
@@ -14,10 +28,27 @@
 		3DE98F9515EA9962003ECABB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE98F9415EA9962003ECABB /* main.m */; };
 		3DE98F9915EA9962003ECABB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE98F9815EA9962003ECABB /* AppDelegate.m */; };
 		3DE98F9C15EA9962003ECABB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE98F9A15EA9962003ECABB /* MainStoryboard.storyboard */; };
-		3DE98F9F15EA9962003ECABB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE98F9E15EA9962003ECABB /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D09A05C15EDF20600B521A5 /* GagsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GagsViewController.h; sourceTree = "<group>"; };
+		3D09A05D15EDF20600B521A5 /* GagsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GagsViewController.m; sourceTree = "<group>"; };
+		3D0ABA2315EF2222002FB319 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		3D0ABA2415EF2222002FB319 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
+		3D0ABA2515EF2222002FB319 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		3D0ABA2615EF2222002FB319 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		3D0ABA2715EF2222002FB319 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		3D0ABA2815EF2222002FB319 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		3D0ABA2915EF2222002FB319 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		3D0ABA2A15EF2222002FB319 /* 7.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 7.gif; sourceTree = "<group>"; };
+		3D0ABA2B15EF2222002FB319 /* 8.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 8.gif; sourceTree = "<group>"; };
+		3D0ABA2C15EF2222002FB319 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
+		3D0ABA3C15EF39CD002FB319 /* gagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gagView.h; sourceTree = "<group>"; };
+		3D0ABA3D15EF39CD002FB319 /* gagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gagView.m; sourceTree = "<group>"; };
+		3D7887DD15EB6C8C00252FF0 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = lib/JSONKit/JSONKit.h; sourceTree = "<group>"; };
+		3D7887DE15EB6C8C00252FF0 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = lib/JSONKit/JSONKit.m; sourceTree = "<group>"; };
+		3D7887E315EB721E00252FF0 /* Gag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gag.h; sourceTree = "<group>"; };
+		3D7887E415EB721E00252FF0 /* Gag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gag.m; sourceTree = "<group>"; };
 		3DE98F8415EA9962003ECABB /* vietGag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vietGag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE98F8815EA9962003ECABB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3DE98F8A15EA9962003ECABB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -29,8 +60,6 @@
 		3DE98F9715EA9962003ECABB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3DE98F9815EA9962003ECABB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3DE98F9B15EA9962003ECABB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		3DE98F9D15EA9962003ECABB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3DE98F9E15EA9962003ECABB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,9 +76,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D0ABA2215EF2222002FB319 /* gagImages */ = {
+			isa = PBXGroup;
+			children = (
+				3D0ABA2315EF2222002FB319 /* 1.jpg */,
+				3D0ABA2415EF2222002FB319 /* 10.jpg */,
+				3D0ABA2515EF2222002FB319 /* 2.jpg */,
+				3D0ABA2615EF2222002FB319 /* 3.jpg */,
+				3D0ABA2715EF2222002FB319 /* 4.jpg */,
+				3D0ABA2815EF2222002FB319 /* 5.jpg */,
+				3D0ABA2915EF2222002FB319 /* 6.jpg */,
+				3D0ABA2A15EF2222002FB319 /* 7.gif */,
+				3D0ABA2B15EF2222002FB319 /* 8.gif */,
+				3D0ABA2C15EF2222002FB319 /* 9.jpg */,
+			);
+			path = gagImages;
+			sourceTree = "<group>";
+		};
+		3D7887DB15EB6C6E00252FF0 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				3D0ABA2215EF2222002FB319 /* gagImages */,
+				3D7887DC15EB6C7500252FF0 /* JSONKit */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		3D7887DC15EB6C7500252FF0 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				3D7887DD15EB6C8C00252FF0 /* JSONKit.h */,
+				3D7887DE15EB6C8C00252FF0 /* JSONKit.m */,
+			);
+			name = JSONKit;
+			sourceTree = "<group>";
+		};
+		3D7887E615EB722200252FF0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D7887E315EB721E00252FF0 /* Gag.h */,
+				3D7887E415EB721E00252FF0 /* Gag.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		3DE98F7915EA9962003ECABB = {
 			isa = PBXGroup;
 			children = (
+				3D7887DB15EB6C6E00252FF0 /* lib */,
 				3DE98F8E15EA9962003ECABB /* vietGag */,
 				3DE98F8715EA9962003ECABB /* Frameworks */,
 				3DE98F8515EA9962003ECABB /* Products */,
@@ -77,11 +151,14 @@
 		3DE98F8E15EA9962003ECABB /* vietGag */ = {
 			isa = PBXGroup;
 			children = (
+				3D7887E615EB722200252FF0 /* Model */,
 				3DE98F9715EA9962003ECABB /* AppDelegate.h */,
 				3DE98F9815EA9962003ECABB /* AppDelegate.m */,
 				3DE98F9A15EA9962003ECABB /* MainStoryboard.storyboard */,
-				3DE98F9D15EA9962003ECABB /* ViewController.h */,
-				3DE98F9E15EA9962003ECABB /* ViewController.m */,
+				3D09A05C15EDF20600B521A5 /* GagsViewController.h */,
+				3D09A05D15EDF20600B521A5 /* GagsViewController.m */,
+				3D0ABA3C15EF39CD002FB319 /* gagView.h */,
+				3D0ABA3D15EF39CD002FB319 /* gagView.m */,
 				3DE98F8F15EA9962003ECABB /* Supporting Files */,
 			);
 			path = vietGag;
@@ -151,6 +228,16 @@
 			files = (
 				3DE98F9315EA9962003ECABB /* InfoPlist.strings in Resources */,
 				3DE98F9C15EA9962003ECABB /* MainStoryboard.storyboard in Resources */,
+				3D0ABA2D15EF2222002FB319 /* 1.jpg in Resources */,
+				3D0ABA2E15EF2222002FB319 /* 10.jpg in Resources */,
+				3D0ABA2F15EF2222002FB319 /* 2.jpg in Resources */,
+				3D0ABA3015EF2222002FB319 /* 3.jpg in Resources */,
+				3D0ABA3115EF2222002FB319 /* 4.jpg in Resources */,
+				3D0ABA3215EF2222002FB319 /* 5.jpg in Resources */,
+				3D0ABA3315EF2222002FB319 /* 6.jpg in Resources */,
+				3D0ABA3415EF2222002FB319 /* 7.gif in Resources */,
+				3D0ABA3515EF2222002FB319 /* 8.gif in Resources */,
+				3D0ABA3615EF2222002FB319 /* 9.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,7 +250,10 @@
 			files = (
 				3DE98F9515EA9962003ECABB /* main.m in Sources */,
 				3DE98F9915EA9962003ECABB /* AppDelegate.m in Sources */,
-				3DE98F9F15EA9962003ECABB /* ViewController.m in Sources */,
+				3D7887DF15EB6C8C00252FF0 /* JSONKit.m in Sources */,
+				3D7887E515EB721E00252FF0 /* Gag.m in Sources */,
+				3D09A05E15EDF20600B521A5 /* GagsViewController.m in Sources */,
+				3D0ABA3E15EF39CD002FB319 /* gagView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +369,7 @@
 				3DE98FA415EA9962003ECABB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
