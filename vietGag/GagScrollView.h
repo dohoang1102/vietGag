@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Gag.h"
+#import "ASIHTTPRequest.h"
 
 @interface GagScrollView : UIScrollView <UIScrollViewDelegate> {
     

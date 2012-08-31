@@ -44,10 +44,10 @@
         frame.origin.x = frame.size.width * page;
         frame.origin.y = 0.0f;
         
-//        Gag *currentGag = [gags objectAtIndex:page];
-//        GagScrollView *newPageView = [[GagScrollView alloc] initWithFrame:frame withGag:currentGag];
-        UIImage *gagImage = [self.gagImages objectAtIndex:page];
-        GagScrollView *newPageView = [[GagScrollView alloc] initWithFrame:frame withGagImage:gagImage];
+        Gag *currentGag = [gags objectAtIndex:page];
+        GagScrollView *newPageView = [[GagScrollView alloc] initWithFrame:frame withGag:currentGag];
+//        UIImage *gagImage = [self.gagImages objectAtIndex:page];
+//        GagScrollView *newPageView = [[GagScrollView alloc] initWithFrame:frame withGagImage:gagImage];
         
         [scrollView addSubview:newPageView];
         [gagViews replaceObjectAtIndex:page withObject:newPageView];
