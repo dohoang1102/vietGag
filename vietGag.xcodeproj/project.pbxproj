@@ -167,7 +167,6 @@
 		3DE98F7915EA9962003ECABB = {
 			isa = PBXGroup;
 			children = (
-				3DFFCE2C15F078FC00A35753 /* libz.dylib */,
 				3D7887DB15EB6C6E00252FF0 /* lib */,
 				3DE98F8E15EA9962003ECABB /* vietGag */,
 				3DE98F8715EA9962003ECABB /* Frameworks */,
@@ -186,6 +185,7 @@
 		3DE98F8715EA9962003ECABB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3DFFCE2C15F078FC00A35753 /* libz.dylib */,
 				3DFFCE2A15F076F300A35753 /* MobileCoreServices.framework */,
 				3DFFCE2815F076EC00A35753 /* SystemConfiguration.framework */,
 				3DFFCE2615F076E300A35753 /* CFNetwork.framework */,

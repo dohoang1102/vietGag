@@ -14,5 +14,6 @@
 @interface GagsViewController : UIViewController <UIScrollViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UILabel *topLabel;
 
 @end

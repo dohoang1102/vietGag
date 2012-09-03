@@ -12,7 +12,13 @@
 
 @property (nonatomic, strong) NSMutableArray *gagViews;
 @property (nonatomic, strong) NSMutableArray *gags;
+@property int curentPage;
+@property int downloadingGags;
+@property int maximunLoadedGags;
+@property int maximumPages;
+
 @property (nonatomic, strong) NSArray *gagImages;
+
 
 -(NSMutableArray *)getGagsForPage:(int)page
                           perPage:(int)perPage
@@ -26,14 +32,19 @@
 @end
 
 @implementation GagsViewController
+
+@synthesize maximunLoadedGags;
 @synthesize scrollView;
 @synthesize gagViews;
 @synthesize gags;
 @synthesize gagImages;
+@synthesize topLabel;
+@synthesize downloadingGags;
+@synthesize maximumPages;
 
 -(void)loadPage:(NSInteger)page
 {
-    if (page < 0 || page >= 10) {
+    if (page < 0 || page >= self.maximumPages) {
         return;
     }
     
@@ -56,7 +67,7 @@
 
 - (void)purgePage:(NSInteger)page
 {
-    if (page < 0 || page >= 10){
+    if (page < 0 || page >= self.maximumPages){
         return;
     }
     
@@ -72,29 +83,55 @@
     CGFloat pageWidth = self.scrollView.frame.size.width;
     NSInteger page = (NSInteger)floor((self.scrollView.contentOffset.x)* 2.0f + pageWidth) / (pageWidth * 2.0f);
     
-    NSInteger firstPage = page -1;
-    NSInteger lastPage = page +1;
     
-    for (NSInteger i = 0; i < firstPage; ++i) {
-        [self purgePage:i];
+    if (page == gags.count - 3) {
+        ++self.curentPage;
+        NSMutableArray * newGags = [self getGagsForPage:self.curentPage perPage:10 forUser:nil withQuery:nil withTag:nil withSource:nil];
+        [gags addObjectsFromArray:newGags];
+        self.downloadingGags = 10;
+        self.topLabel.text = [NSString stringWithFormat:@"Downloading more %d gags...", self.downloadingGags];
     }
+    
+    NSInteger firstPage = page;
+    NSInteger lastPage = gags.count - 1;
+    
+    
+//    for (NSInteger i = 0; i < firstPage; ++i) {
+//        [self purgePage:i];
+//    }
     
     for (NSInteger i = firstPage; i <= lastPage; ++i) {
         [self loadPage:i];
     }
     
-    for (NSInteger i = lastPage +1; i < 10; i++){
-        [self purgePage:i];
-    }
+//    for (NSInteger i = lastPage +1; i < 10; i++){
+//        [self purgePage:i];
+//    }
 }
+
+- (void)imageUpdated:(NSNotification *)notification {
+    --self.downloadingGags;
+    self.topLabel.text = [NSString stringWithFormat:@"Downloading more %d gags...", self.downloadingGags];
+    NSLog(@"Image updated!" );
+}
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    gags = [self getGagsForPage:2 perPage:10 forUser:nil withQuery:nil withTag:nil withSource:nil];
+    self.maximunLoadedGags = 100;
+    self.maximumPages = 1000;
+    self.curentPage = 1;
+    self.downloadingGags = 10;
+    self.topLabel.text = [NSString stringWithFormat:@"Downloading more %d gags...", self.downloadingGags];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(imageUpdated:) name:@"gagImageUpdated" object:nil];
+    
+    
+    gags = [self getGagsForPage:1 perPage:10 forUser:nil withQuery:nil withTag:nil withSource:nil];
+    
     gagViews = [[NSMutableArray alloc] init];
-    for (NSInteger i = 0; i < 10; ++i) {
+    for (NSInteger i = 0; i < self.maximumPages; ++i) {
         [gagViews addObject:[NSNull null]];
     }
     
@@ -117,8 +154,7 @@
     [super viewWillAppear:animated];
     
     CGSize pageScrollViewSize = self.scrollView.frame.size;
-    self.scrollView.contentSize = CGSizeMake(pageScrollViewSize.width * 10, pageScrollViewSize.height);
-    
+    self.scrollView.contentSize = CGSizeMake(pageScrollViewSize.width * 1000, pageScrollViewSize.height);
     [self loadVisiblePages];
 }
 
