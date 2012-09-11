@@ -17,9 +17,6 @@
 @property int maximunLoadedGags;
 @property int maximumPages;
 
-@property (nonatomic, strong) NSArray *gagImages;
-
-
 -(NSMutableArray *)getGagsForPage:(int)page
                           perPage:(int)perPage
                           forUser:(NSString *)userId
@@ -37,7 +34,7 @@
 @synthesize scrollView;
 @synthesize gagViews;
 @synthesize gags;
-@synthesize gagImages;
+
 @synthesize topLabel;
 @synthesize downloadingGags;
 @synthesize maximumPages;
@@ -57,8 +54,7 @@
         
         Gag *currentGag = [gags objectAtIndex:page];
         GagScrollView *newPageView = [[GagScrollView alloc] initWithFrame:frame withGag:currentGag];
-//        UIImage *gagImage = [self.gagImages objectAtIndex:page];
-//        GagScrollView *newPageView = [[GagScrollView alloc] initWithFrame:frame withGagImage:gagImage];
+
         
         [scrollView addSubview:newPageView];
         [gagViews replaceObjectAtIndex:page withObject:newPageView];
@@ -86,10 +82,16 @@
     
     if (page == gags.count - 3) {
         ++self.curentPage;
-        NSMutableArray * newGags = [self getGagsForPage:self.curentPage perPage:10 forUser:nil withQuery:nil withTag:nil withSource:nil];
-        [gags addObjectsFromArray:newGags];
-        self.downloadingGags = 10;
-        self.topLabel.text = [NSString stringWithFormat:@"Downloading more %d gags...", self.downloadingGags];
+        
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^ {
+            NSMutableArray * newGags = [self getGagsForPage:self.curentPage perPage:10 forUser:nil withQuery:nil withTag:nil withSource:nil];
+            dispatch_sync(dispatch_get_main_queue(), ^{
+                [gags addObjectsFromArray:newGags];
+                self.downloadingGags = 10;
+                self.topLabel.text = [NSString stringWithFormat:@"Downloading more %d gags...", self.downloadingGags];
+            });
+        });
+        
     }
     
     NSInteger firstPage = page;
@@ -134,19 +136,6 @@
     for (NSInteger i = 0; i < self.maximumPages; ++i) {
         [gagViews addObject:[NSNull null]];
     }
-    
-    gagImages = [NSArray arrayWithObjects:
-                 [UIImage imageNamed:@"1.jpg"],
-                 [UIImage imageNamed:@"2.jpg"],
-                 [UIImage imageNamed:@"3.jpg"],
-                 [UIImage imageNamed:@"4.jpg"],
-                 [UIImage imageNamed:@"5.jpg"],
-                 [UIImage imageNamed:@"6.jpg"],
-                 [UIImage imageNamed:@"7.gif"],
-                 [UIImage imageNamed:@"8.gif"],
-                 [UIImage imageNamed:@"9.jpg"],
-                 [UIImage imageNamed:@"10.jpg"],
-                 nil];
 }
 
 -(void)viewWillAppear:(BOOL)animated

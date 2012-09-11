@@ -10,11 +10,11 @@
 #import "Gag.h"
 #import "ASIHTTPRequest.h"
 
+
 @interface GagScrollView : UIScrollView <UIScrollViewDelegate> {
     
 }
 
 - (id)initWithFrame:(CGRect)frame withGag:(Gag *)gag;
-- (id)initWithFrame:(CGRect)frame withGagImage:(UIImage *)image;
 
 @end
